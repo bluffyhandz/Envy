@@ -1,0 +1,40 @@
+html,body{
+  width: 100%;
+  height: 100%;
+  margin: 0; /* Space from this element (entire page) and others*/
+  padding: 0; /*space from content and border*/
+  border: 40px inset rgb(0, 0, 0);
+  overflow:hidden;
+  display:block;
+  box-sizing: border-box;
+  z-index: 1;
+  position:absolute;
+  border-right-color: rgb(0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0.836);
+  border-left-color: rgba(0, 0, 0, 0.884);
+  border-bottom-color: rgba(0, 0, 0, 0.918);
+}
+
+.lines{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+}
+
+.lines > div{
+  border: 1px solid black;
+  padding: 200px 1px;
+}
+
+.jaco{
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  opacity: 60%;
+}
+
+
+
+
+
+
