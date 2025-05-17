@@ -1,38 +1,48 @@
-html,body{
-  width: 100%;
-  height: 100%;
-  margin: 0; /* Space from this element (entire page) and others*/
-  padding: 0; /*space from content and border*/
-  border: 40px inset rgb(0, 0, 0);
-  overflow:hidden;
-  display:block;
-  box-sizing: border-box;
-  z-index: 1;
-  position:absolute;
-  border-right-color: rgb(0, 0, 0);
-  border-top-color: rgba(0, 0, 0, 0.836);
-  border-left-color: rgba(0, 0, 0, 0.884);
-  border-bottom-color: rgba(0, 0, 0, 0.918);
+body{
+    background-color: black;
+    color: white;
 }
 
-.lines{
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto;
+nav{
+    display: flex;
+    justify-content: space-around;
 }
 
-.lines > div{
-  border: 1px solid black;
-  padding: 200px 1px;
+.logo img{
+    width: 100%;
 }
 
-.jaco{
-  width: 100%;
-  position: absolute;
-  z-index: -1;
-  opacity: 60%;
+.dropdown{
+    display: inline-block;
+    padding-right: 80px;
+    padding-top: 75px;
+}
+.dropdown button{
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border-color: white;
+}
+.dropdown a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.dropdown .content{
+    display: none;
+    position: absolute;
+    background-color: grey;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+.dropdown:hover .content{
+    display: block;
 }
 
+.dropdown a:hover{
+    background-color: hsl(0, 0%, 90%);
+}
 
 
 
